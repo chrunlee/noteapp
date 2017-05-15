@@ -1,0 +1,154 @@
+html,body{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	font-family:"仿宋";
+	-webkit-app-region:no-drag;
+}
+html *,body *{box-sizing:border-box;}
+.index-header{
+	position:absolute;
+	height:40px;
+	line-height:40px;
+	top:0px;
+	width:100%;
+	background-color:#20a769;
+	color:white;
+	padding:0px 20px;
+	-webkit-app-region:drag;
+}
+.close-win{
+	position:absolute;
+	right:20px;
+	top:10px;
+	cursor:pointer;
+	-webkit-app-region:no-drag;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background-image:url(img/close.png);
+	background-position:0px 0px;
+}
+.min-win{
+	position:absolute;
+	right:50px;
+	top:10px;
+	cursor:pointer;
+	-webkit-app-region:no-drag;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background-image:url(img/min.png);
+	background-position:0px -4px;
+}
+.close-win:hover{
+	background-position:0px -20px;
+}
+.min-win:hover{
+	background-position:0px -24px;
+}
+.index-content{
+	position:fixed;
+	top:40px;
+	bottom:0;
+	right:0;
+	left:0;
+	padding-top:40px;
+}
+.index-folder{
+	width:200px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	border-right:1px solid #ddd;
+}
+.index-folder-block{
+	padding:5px 20px;
+	cursor:pointer;
+	border-bottom:1px solid #ddd;
+}
+.index-folder-block .fa{color:orange;margin-right:10px;}
+.index-note{
+	width:200px;
+	position:absolute;
+	left:200px;
+	top:0px;
+	bottom:0px;
+	overflow-x:hidden;
+	border-right:1px solid #ddd;
+}
+.index-note-block{
+	padding:5px 10px;
+
+}
+.index-note-block.selected{
+	background-color:#E0EAFA;
+}
+.index-note-block span{
+	display:block;
+}
+.title{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:5px;
+	color:#333;
+	cursor:pointer;
+}
+.time{
+	font-size:12px;
+	color:#999;
+	margin-top:5px;
+}
+.content{
+	position:absolute;
+	right:0px;
+	left:400px;
+	top:0px;
+	bottom:0px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.note-title{
+	height:42px;
+	line-height:40px;
+	border-bottom:1px solid #ddd;
+}
+.note-title input{
+	height:40px;
+	line-height:40px;
+	border:none;
+	outline:none;
+	width:100%;
+	display:inline-block;
+	padding:0px 20px;
+}
+.note-title input:active,.note-title input:focus{border:none;outline:none;}
+.content .left{
+	width:40%;
+	float:left;
+	height:100%;
+}
+.content .left textarea{
+	outline : none;
+	padding:10px;
+	height:100%;
+	width:100%;
+	border:none;
+	outline :none;
+	background-color:#272822;
+	color:white;
+}
+.content .right{
+	width:60%;
+	float:left;
+	height:99%;
+	box-sizing:border-box;
+	overflow-y:auto;
+	padding:10px 20px;
+}

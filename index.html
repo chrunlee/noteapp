@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>迅哥哥笔记云</title>
+	<link rel="stylesheet" type="text/css" href="public/plugins/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/plugins/strapdown/themes/cerulean.min.css">
+	<link rel="stylesheet" type="text/css" href="public/plugins/strapdown/strapdown.css">
+	<link rel="stylesheet" href="public/plugins/strapdown/themes/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+</head>
+<body>
+	<!-- md 格式 -->
+	<div class="index-header">
+		<i class="fa fa-user"></i>
+		李迅
+		<span class="min-win" id="minwin"></span>
+		<span class="close-win" id="closewin"></span>
+	</div>
+	<div class="index-content">
+		<div class="index-folder"></div>
+		<div class="index-note"></div>
+		<!-- md 格式文件 -->
+		<div class="content">
+			<div class="note-title">
+				<input type="text" name="title">
+			</div>
+			<div class="left">
+				<textarea></textarea>
+			</div>
+			<div class="right">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="public/plugins/pretty/run_prettify.js"></script>
+<script type="text/javascript">
+	
+	var $ = require('./public/js/jquery');
+	var marked = require('marked');
+	// var prettyCode = require('./public/plugins/pretty/run_prettify');
+	require('./public/js/folder');
+</script>

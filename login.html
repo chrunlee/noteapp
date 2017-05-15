@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="public/css/login.css">
+	<link rel="stylesheet" type="text/css" href="public/plugins/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="body-wrap">
+		<div class="title-drag"></div>
+		<div class="left">
+			<img src="public/css/img/logo.png" alt="">
+		</div>
+		<div class="right">
+			<h4>迅哥哥笔记云</h4>
+			<input type="text" name="username" value="lixun">
+			<input type="text" name="password" value="123">
+			<span id="msg"></span>
+			<span class="btn" id="login">登录</span>
+		</div>
+	</div>
+	<i class="fa fa-close closewin" title="关闭" onClick="javascript:window.close();"></i>
+</body>
+</html>
+<script type="text/javascript">
+	var $ = require('./public/js/jquery');
+	require('./public/js/login');
+</script>
