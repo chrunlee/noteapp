@@ -5,7 +5,7 @@ html,body{
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
-	font-family:"仿宋";
+	font-family:"微软雅黑";
 	-webkit-app-region:no-drag;
 }
 html *,body *{box-sizing:border-box;}
@@ -67,15 +67,21 @@ html *,body *{box-sizing:border-box;}
 	overflow-y:auto;
 	overflow-x:hidden;
 	border-right:1px solid #ddd;
+	background-color:#efefef;
 }
 .index-folder-block{
-	padding:5px 20px;
+	padding:10px 20px;
 	cursor:pointer;
-	border-bottom:1px solid #ddd;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.index-folder-block.selected,.index-folder-block:hover{
+	background-color:#daebf1;
 }
 .index-folder-block .fa{color:orange;margin-right:10px;}
 .index-note{
-	width:200px;
+	width:350px;
 	position:absolute;
 	left:200px;
 	top:0px;
@@ -84,8 +90,11 @@ html *,body *{box-sizing:border-box;}
 	border-right:1px solid #ddd;
 }
 .index-note-block{
-	padding:5px 10px;
-
+	padding:20px 20px;
+	border-bottom:1px solid #ddd;
+}
+.index-note-block:hover{
+	background-color:#fafafa;
 }
 .index-note-block.selected{
 	background-color:#E0EAFA;
@@ -108,7 +117,7 @@ html *,body *{box-sizing:border-box;}
 .content{
 	position:absolute;
 	right:0px;
-	left:400px;
+	left:550px;
 	top:0px;
 	bottom:0px;
 	overflow-x:hidden;
@@ -127,6 +136,8 @@ html *,body *{box-sizing:border-box;}
 	width:100%;
 	display:inline-block;
 	padding:0px 20px;
+	font-size:16px;
+	font-family:"微软雅黑";
 }
 .note-title input:active,.note-title input:focus{border:none;outline:none;}
 .content .left{
@@ -141,8 +152,8 @@ html *,body *{box-sizing:border-box;}
 	width:100%;
 	border:none;
 	outline :none;
-	background-color:#272822;
-	color:white;
+	background-color:#2d2d2b;
+	color:#eee;
 }
 .content .right{
 	width:60%;
